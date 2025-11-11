@@ -1,0 +1,65 @@
+<html lang="en">
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand" href="index.html">My Simple Site</a>
+<button class="nav-toggle" aria-label="Open navigation">☰</button>
+<nav class="main-nav">
+<a href="index.html" class="active">Home</a>
+<a href="about.html">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+
+<main>
+<section class="hero">
+<div class="container">
+<h1>Welcome to My Simple Website</h1>
+<p>A minimal HTML & CSS example with a Home page and an About page.</p>
+<p><a class="btn" href="about.html">Learn more about us</a></p>
+</div>
+</section>
+
+
+<section class="features container">
+<article>
+<h2>Lightweight</h2>
+<p>No frameworks, just HTML and CSS. Great for learning or small projects.</p>
+</article>
+<article>
+<h2>Responsive</h2>
+<p>Simple responsive layout that looks good on phones and desktop screens.</p>
+</article>
+<article>
+<h2>Easy to edit</h2>
+<p>All source code is obvious and easy to change to fit your needs.</p>
+</article>
+</section>
+
+
+<section id="contact" class="container contact">
+<h2>Contact</h2>
+<p>If you want help customizing this site — say hi at <a href="mailto:hello@example.com">hello@example.com</a>.</p>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>© <span id="year"></span> My Simple Site — Built with ❤️</p>
+</div>
+</footer>
+
+
+<script>
+// small script: set year and toggle mobile nav
+document.getElementById('year').textContent = new Date().getFullYear();
+const btn = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.main-nav');
+btn.addEventListener('click', () => {
+nav.classList.toggle('open');
+});
+</script>
+</body>
+</html>
